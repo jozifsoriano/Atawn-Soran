@@ -9,7 +9,7 @@ import json
 from discord import Game
 from discord.ext.commands import Bot
 
-TOKEN = 'NjAzOTc1NDYyMzA1MTM2NjYx.XTnPSg.KVQWzuEbem_HrtkDUg44F23GNJw'
+TOKEN = 'token'
 BOT_PREFIX = ("$","|")
 client = Bot(command_prefix=BOT_PREFIX)
 
