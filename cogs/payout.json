@@ -1,0 +1,5 @@
+{
+  "one_to_one": ["color", "parity", "half"],
+  "two_to_one": ["column", "dozen"],
+  "thirtyfive_to_one": ["number"]
+}
