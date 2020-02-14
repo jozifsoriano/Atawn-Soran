@@ -3,19 +3,20 @@ from discord.ext import commands
 import requests
 import json
 
-API_KEY =  "xxx"
+API_KEY =  "RGAPI-395f1044-d042-4abe-9fd0-e7b29ece752f"
 class LoL(commands.Cog):
     def __init__(self, client):
         self.client = client
+
     #lol - gives League of Legends information for given [summoner_name]
     @commands.command()
     async def lol(self, ctx, *, name):
         #get info from LoL API (summoner name, info, level, winrate)
-        summoner_name = name
-        summoner_info = requests.get('https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/'+ summoner_name+'?api_key='+API_KEY)
+        summoner_info = requests.get(f'https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/{name}?api_key=+{API_KEY}')
         s_info = summoner_info.json()
+        #summoner_name = s_info['name'] FIX THIS <---
         enc_id = s_info['id']
-        league_info = requests.get('https://na1.api.riotgames.com/lol/league/v4/entries/by-summoner/'+enc_id+'?api_key='+API_KEY)
+        league_info = requests.get('https://na1.api.riotgames.com/lol/league/v4/entries/by-summoner/{enc_id}?api_key={API_KEY}')
         l_info = league_info.json()
         print(f"Enc_id: {enc_id}")
         level = s_info['summonerLevel']

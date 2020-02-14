@@ -14,6 +14,8 @@ class Example(commands.Cog):
     #command
     @commands.command()
     async def ping(self,ctx):
+        print(f'USERNAME: {str(ctx.message.author)}')
+        print(f'GUILD: {str(ctx.message.author.guild)}')
         await ctx.send(f'Pong! {round(self.client.latency * 1000)}ms.')
 
 def setup(client):

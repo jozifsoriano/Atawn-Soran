@@ -10,7 +10,7 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 
 #tokens and keys
-TOKEN = 'xxx'
+TOKEN = 'NjAzOTc1NDYyMzA1MTM2NjYx.XjZcpA.ujQS1eAuvOcMfqm50o_DtV1rL3s'
 
 
 #Bot info
