@@ -49,9 +49,7 @@ class Casino(commands.Cog):
         print("PROCESSING")
         if winflag == True: #win
             start = self.read_cash(user)
-            print(start)
             profit = bet*payout_mult
-            print(profit)
             final_balance = start + profit
         else:
             start = self.read_cash(user)
@@ -61,15 +59,21 @@ class Casino(commands.Cog):
 
     #cash - set cash for user to [cash]
     @commands.command()
-    async def cash(self, ctx, cash:int):
+    async def abcash(self, ctx, cash:int):
         self.write_cash(str(ctx.author),cash)
-        await ctx.send(f"New balance like Kawhi: {cash}")
+        await ctx.channel.purge(limit=1)
+        embed = discord.Embed(title='**BANK OF ANTAWNICA**', description=f'Est. 1994', color=0x4432a8)
+        embed.add_field(name=f"{ctx.author}'s New Balance like Kawhi: ", value=f'[{cash}] BIG BALLER BRAND BUCKS.',inline = True)
+        await ctx.send(embed = embed)
 
     #balance - check balance for a user
     @commands.command()
     async def balance(self, ctx):
         balance = self.read_cash(str(ctx.author))
-        await ctx.send(f'Your balance is [{balance}] BIG BALLER BRAND BUCKS.')
+        await ctx.channel.purge(limit=1)
+        embed = discord.Embed(title='**BANK OF ANTAWNICA**', description=f'Est. 1994', color=0x4432a8)
+        embed.add_field(name=f"{ctx.author}'sbalance is ", value=f'[{balance}] BIG BALLER BRAND BUCKS.',inline = True)
+        await ctx.send(embed = embed)
 
     #rps - a friendly game of rock paper scissors
     @commands.command()
@@ -123,6 +127,7 @@ class Casino(commands.Cog):
     #table - creates a text channel for roulette
     @commands.command()
     async def table(self, ctx):
+        await ctx.channel.purge(limit=1)
         channel = await ctx.message.author.guild.create_text_channel('Roulette Table')
         embed = discord.Embed(title=f"Welcome to the table", description = "$roulette [bet_choice] [bet_amount]")
         embed.add_field(name="color(1:1)", value="[red/black]", inline = True)
@@ -210,7 +215,6 @@ class Casino(commands.Cog):
             self.process_bet(str(ctx.author), bet_amount, payout_mult, winflag)
             embed.add_field(name = f"{ctx.author}, your final balance is ",value=f"{self.read_cash(str(ctx.author))}.",inline=False)
             await ctx.send(embed = embed)
-
 
 def setup(client):
     client.add_cog(Casino(client))

@@ -3,7 +3,7 @@ from discord.ext import commands
 import requests
 import json
 
-API_KEY =  "RGAPI-395f1044-d042-4abe-9fd0-e7b29ece752f"
+API_KEY =  "RGAPI-8ca7714b-2d88-48f6-9bb2-496a0accaefb"
 class LoL(commands.Cog):
     def __init__(self, client):
         self.client = client
@@ -14,7 +14,7 @@ class LoL(commands.Cog):
         #get info from LoL API (summoner name, info, level, winrate)
         summoner_info = requests.get(f'https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/{name}?api_key=+{API_KEY}')
         s_info = summoner_info.json()
-        #summoner_name = s_info['name'] FIX THIS <---
+        summoner_name = s_info['name'] #FIX THIS <---
         enc_id = s_info['id']
         league_info = requests.get('https://na1.api.riotgames.com/lol/league/v4/entries/by-summoner/{enc_id}?api_key={API_KEY}')
         l_info = league_info.json()

@@ -6,13 +6,23 @@ class Atawn(commands.Cog):
 
     def __init__(self, client):
         self.client = client
+        self.counter = 0
 
     #tgif - Thank god it's Friday
     @commands.command()
     async def tgif(self, ctx):
+        await ctx.channel.purge(limit=1)
         #msg = 'TGIF, '+ ctx.author.mention +'. LET\'S GET THIS BREAD.'
         msg = f"TGIF, {ctx.author.mention}. LET\'S GET THIS MF BREAD."
         await ctx.send(msg, file=discord.File('TGIF.png'))
+
+    #luke - Oh no mans got got again
+    @commands.command()
+    async def luke(self, ctx):
+        await ctx.channel.purge(limit=1)
+        self.counter += 1
+        msg = f"Aw shit, Luke's gotten got {self.counter} time(s)."
+        await ctx.send(msg, file=discord.File('luke.png'))
 
     #8ball - ask the magic 8 ball a yes or no question, and it shall answer
     @commands.command(aliases = ['8ball'])

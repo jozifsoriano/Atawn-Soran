@@ -1,4 +1,4 @@
-# Work with Python 3.6
+# Works with Python 3.8
 # https://discordapp.com/oauth2/authorize?client_id=603975462305136661&scope=bot
 
 import discord
@@ -10,7 +10,7 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 
 #tokens and keys
-TOKEN = 'NjAzOTc1NDYyMzA1MTM2NjYx.XjZcpA.ujQS1eAuvOcMfqm50o_DtV1rL3s'
+TOKEN = 'NjAzOTc1NDYyMzA1MTM2NjYx.Xkn0hA.9E6GWo6NPuuSV_lwjNlQ43t71GE'
 
 
 #Bot info
