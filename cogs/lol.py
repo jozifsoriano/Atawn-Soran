@@ -3,7 +3,7 @@ from discord.ext import commands
 import requests
 import json
 
-API_KEY =  "RGAPI-8ca7714b-2d88-48f6-9bb2-496a0accaefb"
+API_KEY =  "RGAPI-6dc414dc-6870-4ee8-bc51-e38f05a37de2"
 class LoL(commands.Cog):
     def __init__(self, client):
         self.client = client

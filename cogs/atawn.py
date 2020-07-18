@@ -9,7 +9,7 @@ class Atawn(commands.Cog):
         self.counter = 0
 
     #tgif - Thank god it's Friday
-    @commands.command()
+    @commands.command(aliases = ['TGIF','anton'])
     async def tgif(self, ctx):
         await ctx.channel.purge(limit=1)
         #msg = 'TGIF, '+ ctx.author.mention +'. LET\'S GET THIS BREAD.'

@@ -2,6 +2,7 @@ import json
 import random
 import discord
 from discord.ext import commands
+#https://github.com/Miserlou/dnd-tldr
 
 class DnD(commands.Cog):
 
@@ -11,6 +12,11 @@ class DnD(commands.Cog):
     def new_char():
         print("hi")
     
+    #map - Gets the map for the current campaign
+    @commands.command()
+    async def map(self, ctx):
+        await ctx.channel.purge(limit=1)
+        await ctx.send("", file=discord.File('DNDMAP.jpg'))
 
     #roll - roll a dice ([x]d[y])
     @commands.command()
