@@ -3,7 +3,17 @@ from discord.ext import commands
 import requests
 import json
 
-API_KEY =  "RGAPI-6dc414dc-6870-4ee8-bc51-e38f05a37de2"
+API_KEY =  ''
+tokenFile = open('token','r')
+while True:
+    line = tokenFile.readline()
+    if not line:
+        break
+    splitLine = line.split(':')
+    if splitLine[0] == 'lol':
+        API_KEY = splitLine[1]
+        break
+        
 class LoL(commands.Cog):
     def __init__(self, client):
         self.client = client

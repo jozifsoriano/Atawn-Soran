@@ -32,6 +32,13 @@ class DnD(commands.Cog):
             for i in range (x):
                 embed.add_field(name = f'**Dice {i+1}:**',value=f"**{random.randint(1,y)}**",inline=False)
         await ctx.send(embed = embed)
+    
+    #charhelp - links the players handbook
+    @command.commad()
+    async def charhelp(self, ctx):
+        embed = discord.Embed(title="Player's Handbook 5e", description="How to play this game.")
+        embed.add_field(name='Link:',value="https://online.anyflip.com/ofsj/cxmj/mobile/index.html#p=287")
+        await ctx.send(embed=embed)
 
 def setup(client):
     client.add_cog(DnD(client))

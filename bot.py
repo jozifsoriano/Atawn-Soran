@@ -10,8 +10,16 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 
 #tokens and keys
-TOKEN = 'NjAzOTc1NDYyMzA1MTM2NjYx.XxD4Jw.FDTFpZM-F4V1r8PwKQfeZvAiugs'
-
+DISC_TOKEN = ''
+tokenFile = open('token','r')
+while True:
+    line = tokenFile.readline()
+    if not line:
+        break
+    splitLine = line.split(':')
+    if splitLine[0] == 'discord':
+        DISC_TOKEN = splitLine[1]
+        break
 
 #Bot info
 BOT_PREFIX = ("$")
@@ -40,4 +48,4 @@ for filename in os.listdir('./cogs'):
 
 
 #run the client
-client.run(TOKEN)
+client.run(DISC_TOKEN)
