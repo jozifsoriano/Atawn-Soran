@@ -10,7 +10,7 @@ class Atawn(commands.Cog):
 
     #tgif - Thank god it's Friday
     @commands.command(aliases = ['TGIF','anton'])
-    async def tgif(self, ctx):
+    async def atawn(self, ctx):
         await ctx.channel.purge(limit=1)
         #msg = 'TGIF, '+ ctx.author.mention +'. LET\'S GET THIS BREAD.'
         msg = f"TGIF, {ctx.author.mention}. LET\'S GET THIS MF BREAD."
@@ -23,6 +23,13 @@ class Atawn(commands.Cog):
         self.counter += 1
         msg = f"Aw shit, Luke's gotten got {self.counter} time(s)."
         await ctx.send(msg, file=discord.File('luke.png'))
+
+    #john - spits fun facts about the man, the myth, the legend
+    async def john(self, ctx):
+        responses = ["John's full name is actually John Mark Lunes Martes Miercoles Jueves Viernes Sabado Dominguez"]
+        embed = discord.Embed(title="LUNCHMUNCHIES", description="the goat circa '94", color=0xFFFFFF)
+        embed.add_field(name="Did you know?", value = random.choice(responses))
+        await ctx.send(embed=embed)
 
     #8ball - ask the magic 8 ball a yes or no question, and it shall answer
     @commands.command(aliases = ['8ball'])

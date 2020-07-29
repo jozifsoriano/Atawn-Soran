@@ -34,7 +34,7 @@ class DnD(commands.Cog):
         await ctx.send(embed = embed)
     
     #charhelp - links the players handbook
-    @command.commad()
+    @commands.command()
     async def charhelp(self, ctx):
         embed = discord.Embed(title="Player's Handbook 5e", description="How to play this game.")
         embed.add_field(name='Link:',value="https://online.anyflip.com/ofsj/cxmj/mobile/index.html#p=287")
