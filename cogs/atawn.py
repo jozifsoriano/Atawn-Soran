@@ -12,9 +12,9 @@ class Atawn(commands.Cog):
     @commands.command(aliases = ['TGIF','anton'])
     async def atawn(self, ctx):
         await ctx.channel.purge(limit=1)
-        #msg = 'TGIF, '+ ctx.author.mention +'. LET\'S GET THIS BREAD.'
         msg = f"TGIF, {ctx.author.mention}. LET\'S GET THIS MF BREAD."
-        await ctx.send(msg, file=discord.File('TGIF.png'))
+        #await ctx.send(msg, file=discord.File('TGIF.png'))
+        await ctx.send(msg, file=discord.File('TGIF2.jpg'))
 
     #luke - Oh no mans got got again
     @commands.command()
@@ -25,8 +25,11 @@ class Atawn(commands.Cog):
         await ctx.send(msg, file=discord.File('luke.png'))
 
     #john - spits fun facts about the man, the myth, the legend
+    @commands.command()
     async def john(self, ctx):
-        responses = ["John's full name is actually John Mark Lunes Martes Miercoles Jueves Viernes Sabado Dominguez"]
+        responses = ["John's full name is actually John Mark Lunes Martes Miercoles Jueves Viernes Sabado Dominguez",
+                    "John once won a fishing competition in WoW classic. He reeled in Onyxia!",
+                    "John loves to hike. He stated \"I love the beauftiful scenery. It's a great outlet for relieving stress. Every hike, I make sure to come prepared wearing 3 layers of clothes, including a thermal rainjacket and Timberlands. I usually carry a backpack with 3 days supply food and water, a gas-powered grill, 2 gas canisters, a frying pan, bottle opener, charcoal, a tent, a lantern, a headlamp, extra batteries (4xAA, 8xAAA, 2x9v), a sleeping bag, a thermal blanket, a pillow, a hammock, firewood, an axe, a chainsaw, duct tape, rope, a hammer, a leatherman multi-tool, 2000ct matchbook, a lighter, binoculars, portable phone charger, solar panel, desktop PC, keyboard and mouse, and dual monitors. I know this seems like I carry a lot for a 3-hour hike, but honestly, it's still way easier than carrying Anton.\""]
         embed = discord.Embed(title="LUNCHMUNCHIES", description="the goat circa '94", color=0xFFFFFF)
         embed.add_field(name="Did you know?", value = random.choice(responses))
         await ctx.send(embed=embed)
