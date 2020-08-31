@@ -8,11 +8,6 @@ class Games(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    # read and return json file
-    def read_from_json(self, user, game):
-        with open('games.json') as json_file:
-            return json.load(json_file)
-
     #write the user, tag, and the game it's for
     def write_to_json(self, user, tag, game):
         flag = False
@@ -34,18 +29,40 @@ class Games(commands.Cog):
 
     #fallguy - Keeps track of the users fall guy number.
     @commands.command()
-    async def fallguy(self, ctx, number:int=None):
+    async def fallguys(self, ctx, number:int=None):
+        await ctx.channel.purge(limit=1)
         if not number:
-            player_list = self.read_from_json(str(ctx.author), 'fallguys')
-            embed = discord.Embed(title="**Fall Guys**", description="$fallguys [#] to add your number", color =0xf538ff)
-            for player in player_list:
-                embed.add_field(name = player['name'],value=player['fallguys'],inline=False)
-            await ctx.send(embed = embed)
+            with open('games.json') as json_file:
+                player_list = json.load(json_file)
+                embed = discord.Embed(title="**Fall Guys**", description="$fallguys [#] to add your number", color =0xf538ff)
+                for player in player_list['user']:
+                    try:
+                        embed.add_field(name = f"@{player['name']}",value=player['fallguys'],inline=False)
+                    except:
+                        print('NOT FOUND')
+                await ctx.send(embed = embed)
         else:
             self.write_to_json(str(ctx.author),f'Fall Guy {number}', 'fallguys')
             await ctx.send(f'Welcome, Fall Guy {number}.')
             
-        
+
+    #slippi - Keeps track of the users fall guy number.
+    @commands.command()
+    async def slippi(self, ctx, tag=None):
+        await ctx.channel.purge(limit=1)
+        if not tag:
+            with open('games.json') as json_file:
+                player_list = json.load(json_file)
+                embed = discord.Embed(title="**Rollback Melee**", description="https://slippi.gg/", color =0xf538ff)
+                for player in player_list['user']:
+                    try:
+                        embed.add_field(name = f"{player['name']}",value=player['slippi'],inline=False)
+                    except:
+                        print('NOT FOUND')
+                await ctx.send(embed = embed)
+        else:
+            self.write_to_json(str(ctx.author),tag, 'slippi')
+            await ctx.send(f'{tag} added. ISO can be found at https://drive.google.com/file/d/0B78DlVMCXjSFZWRSaGFxREQtQjg/view?usp=sharing')
         
 
 def setup(client):
