@@ -1,2 +1,6 @@
 .DS_store
 token
+/.idea
+/.vs
+/.vscode
+/cogs/__pycache__

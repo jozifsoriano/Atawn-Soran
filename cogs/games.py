@@ -82,5 +82,7 @@ class Games(commands.Cog):
         else:
             self.write_to_json(str(ctx.author), f'UID {number}', 'genshin')
             await ctx.send(f'UID {number} saved.')
+
+            
 def setup(client):
     client.add_cog(Games(client))
