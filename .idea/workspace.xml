@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e7435aee-3413-4f9d-8122-4565cc64a665" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Atawn Bot for Discord.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNDMAP.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TGIF.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TGIF2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/board.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/announcements.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/atawn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/dnd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/example.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/gamble.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/games.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/help.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/lol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dndchar.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/games.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/luke.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/singlezero.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/singlezero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="8ec4debe-1058-4a5e-9464-0cc0b67e2f15" />
+  <component name="ProjectId" id="1hjfYC3kXaKjDpQISOyyKhwGakG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test.py" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\JosephMarcus\iCloudDrive\Desktop\Programming Projects\Atawn Bot for Discord" />
+      <recent name="C:\Users\JosephMarcus\iCloudDrive\Desktop\Programming Projects\Atawn Bot for Discord\flaskr" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.bot">
+    <configuration name="bot" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Atawn Bot for Discord" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\JosephMarcus\AppData\Local\Programs\Python\Python38-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python">
+      <module name="Atawn Bot for Discord" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\JosephMarcus\AppData\Local\Programs\Python\Python38-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.bot" />
+      <item itemvalue="Python.test" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e7435aee-3413-4f9d-8122-4565cc64a665" name="Default Changelist" comment="" />
+      <created>1600529466608</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600529466608</updated>
+      <workItem from="1600529468124" duration="2623000" />
+      <workItem from="1600547624605" duration="675000" />
+      <workItem from="1601128622573" duration="5624000" />
+      <workItem from="1601237346535" duration="3766000" />
+      <workItem from="1602045195557" duration="430000" />
+      <workItem from="1602250865392" duration="1343000" />
+      <workItem from="1603333709853" duration="1442000" />
+      <workItem from="1603554436014" duration="5713000" />
+      <workItem from="1603583069634" duration="5849000" />
+      <workItem from="1603639378263" duration="7822000" />
+      <workItem from="1607476017083" duration="499000" />
+      <workItem from="1607888499583" duration="77000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="179" width="1092" height="745" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603683663754">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="0" y="177" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.-232.1080.1880@0.0.1920.1040" timestamp="1600529517016" />
+    <state x="0" y="179" width="1092" height="745" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1920.-232.1080.1890@0.0.1920.1050" timestamp="1603683663754" />
+    <state x="326" y="292" key="FileChooserDialogImpl" timestamp="1603683657111">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="326" y="289" key="FileChooserDialogImpl/0.0.1920.1040/1920.-232.1080.1880@0.0.1920.1040" timestamp="1600542840178" />
+    <state x="326" y="292" key="FileChooserDialogImpl/0.0.1920.1050/1920.-232.1080.1890@0.0.1920.1050" timestamp="1603683657111" />
+    <state width="1877" height="264" key="GridCell.Tab.0.bottom" timestamp="1607888575932">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1034" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-232.1080.1880@0.0.1920.1040" timestamp="1600542844670" />
+    <state width="1877" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.-232.1080.1890@0.0.1920.1050" timestamp="1607888575932" />
+    <state width="1877" height="264" key="GridCell.Tab.0.center" timestamp="1607888575932">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1034" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-232.1080.1880@0.0.1920.1040" timestamp="1600542844670" />
+    <state width="1877" height="264" key="GridCell.Tab.0.center/0.0.1920.1050/1920.-232.1080.1890@0.0.1920.1050" timestamp="1607888575932" />
+    <state width="1877" height="264" key="GridCell.Tab.0.left" timestamp="1607888575932">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1034" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-232.1080.1880@0.0.1920.1040" timestamp="1600542844670" />
+    <state width="1877" height="264" key="GridCell.Tab.0.left/0.0.1920.1050/1920.-232.1080.1890@0.0.1920.1050" timestamp="1607888575932" />
+    <state width="1877" height="264" key="GridCell.Tab.0.right" timestamp="1607888575932">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1034" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-232.1080.1880@0.0.1920.1040" timestamp="1600542844670" />
+    <state width="1877" height="264" key="GridCell.Tab.0.right/0.0.1920.1050/1920.-232.1080.1890@0.0.1920.1050" timestamp="1607888575932" />
+    <state width="1034" height="328" key="GridCell.Tab.1.bottom" timestamp="1600542844660">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1034" height="328" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-232.1080.1880@0.0.1920.1040" timestamp="1600542844660" />
+    <state width="1034" height="328" key="GridCell.Tab.1.center" timestamp="1600542844660">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1034" height="328" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-232.1080.1880@0.0.1920.1040" timestamp="1600542844660" />
+    <state width="1034" height="328" key="GridCell.Tab.1.left" timestamp="1600542844660">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1034" height="328" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-232.1080.1880@0.0.1920.1040" timestamp="1600542844660" />
+    <state width="1034" height="328" key="GridCell.Tab.1.right" timestamp="1600542844660">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1034" height="328" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-232.1080.1880@0.0.1920.1040" timestamp="1600542844660" />
+    <state x="623" y="227" key="search.everywhere.popup" timestamp="1603639724754">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" key="search.everywhere.popup/0.0.1920.1050/1920.-232.1080.1890@0.0.1920.1050" timestamp="1603639724754" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Atawn_Bot_for_Discord$test.coverage" NAME="test Coverage Results" MODIFIED="1603683835469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Atawn_Bot_for_Discord$bot.coverage" NAME="bot Coverage Results" MODIFIED="1607888548253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

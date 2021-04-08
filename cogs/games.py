@@ -64,6 +64,23 @@ class Games(commands.Cog):
             self.write_to_json(str(ctx.author),tag, 'slippi')
             await ctx.send(f'{tag} added. ISO can be found at https://drive.google.com/file/d/0B78DlVMCXjSFZWRSaGFxREQtQjg/view?usp=sharing')
         
-
+    # fallguy - Keeps track of the users fall guy number.
+    @commands.command()
+    async def genshin(self, ctx, number: int = None):
+        await ctx.channel.purge(limit=1)
+        if not number:
+            with open('games.json') as json_file:
+                player_list = json.load(json_file)
+                embed = discord.Embed(title="**Genshin Impact**", description="$genshin [#] to add your UID",
+                                      color=0xf538ff)
+                for player in player_list['user']:
+                    try:
+                        embed.add_field(name=f"@{player['name']}", value=player['genshin'], inline=False)
+                    except:
+                        print('NOT FOUND')
+                await ctx.send(embed=embed)
+        else:
+            self.write_to_json(str(ctx.author), f'UID {number}', 'genshin')
+            await ctx.send(f'UID {number} saved.')
 def setup(client):
     client.add_cog(Games(client))
