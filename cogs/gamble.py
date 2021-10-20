@@ -3,13 +3,16 @@ import random
 import discord
 from discord.ext import commands
 
+PATH_TO_BANK_JSON = 'content/casino/bank.json'
+
 class Casino(commands.Cog):
     def __init__(self, client):
         self.client = client
 
+    
     #function for reading money of user from json
     def read_cash(self,user):
-        with open('bank.json') as json_file:
+        with open(PATH_TO_BANK_JSON) as json_file:
             bank = json.load(json_file)
             for u in bank['user']:
                 if user == u['name']:
@@ -20,7 +23,7 @@ class Casino(commands.Cog):
         flag = False
         bank = {}
         bank['user'] = []
-        with open('bank.json') as json_file:
+        with open(PATH_TO_BANK_JSON) as json_file:
             bank = json.load(json_file)
             for u in bank['user']:
                 if user == u['name']:
@@ -31,7 +34,7 @@ class Casino(commands.Cog):
                 'name': user,
                 'cash': cash
             })
-        with open('bank.json', 'w') as outfile:
+        with open(PATH_TO_BANK_JSON, 'w') as outfile:
             json.dump(bank, outfile)
 
     #function for checking if user has enough money to gamble
