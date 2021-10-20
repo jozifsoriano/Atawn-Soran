@@ -4,6 +4,7 @@ import discord
 from discord.ext import commands
 
 PATH_TO_BANK_JSON = 'content/casino/bank.json'
+PATH_TO_BOARD_JSON = 'content/casino/board.json'
 
 
 class Casino(commands.Cog):
@@ -232,7 +233,7 @@ class Casino(commands.Cog):
             print(f'roll: {roll}')
             embed.add_field(name='**WINNING NUMBER:**',
                             value=f"**{roll}**", inline=False)
-            with open('board.json') as json_file:
+            with open(PATH_TO_BOARD_JSON) as json_file:
                 board = json.load(json_file)
                 result = board['board'][roll][bet_type]
                 if(bet_type == 'color'):

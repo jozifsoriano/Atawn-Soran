@@ -11,7 +11,7 @@ class Announcements(commands.Cog):
     @commands.command()
     async def minecraft(self, ctx):
         embed = discord.Embed(title="Minecraft Server", description="", color=0xFFFFFF)
-        embed.add_field(name="MC Eternal 1.12.2 modpack", value = "")
+        embed.add_field(name="MC Eternal 1.12.2 modpack", value = "https://download.curseforge.com/")
         embed.add_field(name="IP Address", value = "69.12.95.216:25565")
         embed.add_field(name="Venmo", value = "@MSAnthony")
         await ctx.send(embed=embed)
