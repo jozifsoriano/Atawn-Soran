@@ -18,6 +18,9 @@ class Casino(commands.Cog):
             for u in bank['user']:
                 if user == u['name']:
                     return int(u['cash'])
+                else:
+                    self.write_cash(self, user, 3000)
+                    return 3000
 
     # function for reading money of user and then writing [cash] money  to json
     def write_cash(self, user, cash: int):
