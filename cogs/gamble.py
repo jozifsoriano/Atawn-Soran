@@ -226,7 +226,7 @@ class Casino(commands.Cog):
         else:
             if flag == -1:
                 embed.add_field(
-                    name=choice, value="Get yo money", inline=False)
+                    name = bet_choice, value="Get yo money", inline=False)
             else:
                 embed.add_field(
                     title=f'ERROR, {ctx.author}; Bet choice invalid.', value='Use format [bet_type][bet_choice]')
