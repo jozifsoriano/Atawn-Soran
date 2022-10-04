@@ -17,7 +17,7 @@ while True:
     if not line:
         break
     splitLine = line.split(':')
-    if splitLine[0] == 'discord':
+    if splitLine[0] == 'disc':
         DISC_TOKEN = splitLine[1]
         break
 

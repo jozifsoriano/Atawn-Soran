@@ -1,13 +1,11 @@
 import random
 
-input1 = '1d20'
-input = '3d15'
-input1 = '1x1'
-input1 = '444'
-x = int(input[0])
-y = int(input[2:])
-if(input[1] != 'd'):
-    print("ERROR")
-else:
-    for i in range (x):
-        print(f'**Dice {x} Max {y}:** || **{random.randint(1,y)}**')
+import requests
+
+API_KEY = ""
+playlistId = "PLE61688C0C6264341"
+playlistItem_object = requests.get(f'https://content-youtube.googleapis.com/youtube/v3/playlistItems?part=contentDetails&key={API_KEY}&maxResults=10&playlistId={playlistId}')
+print(playlistItem_object)
+playlistItemJson = playlistItem_object.json()
+for item in (playlistItemJson['items']):
+    print(item['contentDetails']['videoId'])
